@@ -25,7 +25,7 @@ The program requires Python 3.x and the following packages:
 * scikit-image
 * Pillow
 
-Running on GPU is highly recommended.
+For specifc package version etc, please see the Code Ocean capsule. GPU is highly recommended.
 
 ## Run the Program using Code Ocean
 We recommend using the Code Ocean version of this program, which can be run using Code Ocean's built-in interface. The code is available [here](https://).
