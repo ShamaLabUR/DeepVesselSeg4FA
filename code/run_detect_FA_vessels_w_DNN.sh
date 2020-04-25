@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Root directory to dataset 
-DATA_PATH='../datasets/single_sample_from_RECOVERY-FA19'
+DATA_PATH='../data/datasets/single_sample_from_RECOVERY-FA19'
 
 # Directory to pretrained model
-PRETRAINED_DIR='../pretrained_models/'
+PRETRAINED_DIR='../data/pretrained_models/'
 PRETRAINED_ID=8
 
 # Directory to results folder. Automatically generated if it doesn't exist

@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # others
-datasets/RECOVERY-FA19
-pretrained_models/
+data/datasets/RECOVERY-FA19
+data/pretrained_models/
 results/

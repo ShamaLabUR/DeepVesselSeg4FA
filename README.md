@@ -13,12 +13,12 @@ IEEE Transactions on Image Processing, vol. 29, no. 1, 2020, accepted for public
 <a href="url">[Project Website]</a>
 </p>
 
-![overview](./docs/pipeline_overview.png)
+![overview](./data/docs/pipeline_overview.png)
 
 ## Dependencies
 The program requires Python 3.x and the following packages:
 * PyTorch v0.4.1
-* torchvision v0.2.2
+* torchvision v0.2.1
 * OpenCV-Python 
 * NumPy
 * scikit-learn
@@ -35,9 +35,9 @@ To run the FA vessel detection using the pre-trained model, go to `./code` folde
 ```bash
 ./run_detect_FA_vessels_w_DNN.sh
 ```
-The results will be saved to `./results`. This folder will be automatically generated if it does not exist. Please see the comments in `./run_detect_FA_vessels_w_DNN.sh` for parameter settings. The detected retinal vessel maps are saved as PNG images in `./results`. The filename `predicted_Img*png` against the corresponding ground truth vessel map available in the folder `./dataset` where the name of the ground truth file is `Label*.png`
+The results will be saved to `./results`. This folder will be automatically generated if it does not exist. Please see the comments in `run_detect_FA_vessels_w_DNN.sh` for parameter settings. The detected retinal vessel maps are saved as PNG images in `./results`. The filename `predicted_Img*png` against the corresponding ground truth vessel map available in the folder `./dataset` where the name of the ground truth file is `Label*.png`
 
-By default, the code demonstrates the vessel detection on the image `./datasets/single_sample_from_RECOVERY-FA19/Images_RECOVERY-FA19/Img08_RECOVERY-FA19.tif`, which corresponds to the second image in Fig. 9 in the above mentioned paper. The predicted vessel map is stored in `./results/predicted_Img08_RECOVERY-FA19.png`. The trained model used for obtaining the segmentation is provided as `pretrained_models/model_8.pth` and corresponds to the model used for generating the results for this image for Table II of the above paper. That is, it is the model from the leave-one-out cross-validation procedure that was trained on the remaining 7 images in the RECOVERY-FA19 dataset (see paper for details).
+By default, the code demonstrates the vessel detection on the image `./data/datasets/single_sample_from_RECOVERY-FA19/Images_RECOVERY-FA19/Img08_RECOVERY-FA19.tif`, which corresponds to the second image in Fig. 9 in the above mentioned paper. The predicted vessel map is stored in `./results/predicted_Img08_RECOVERY-FA19.png`. The trained model used for obtaining the segmentation is provided as `./data/pretrained_models/model_8.pth` and corresponds to the model used for generating the results for this image for Table II of the above paper. That is, it is the model from the leave-one-out cross-validation procedure that was trained on the remaining 7 images in the RECOVERY-FA19 dataset (see paper for details).
 
 ## Evaluate Detected Vessel Maps
 
@@ -46,12 +46,12 @@ Once the vessel detection is completed using the above process, several evaluati
 ./run_eval_seg_vs_gt.sh
 ```
 
-Summary statistics from the evaluation will be displayed on the screen. By default, if you perform these two steps in sequence, the code will perform the evaluation for the predicted vessel map `./results/predicted_Img08_RECOVERY-FA19.png` using the corresponding ground-truth labeled image `./datasets/single_sample_from_RECOVERY-FA19/Labels_RECOVERY-FA19/Label08_RECOVERY-FA19.png`.
+Summary statistics from the evaluation will be displayed on the screen. By default, if you perform these two steps in sequence, the code will perform the evaluation for the predicted vessel map `./results/predicted_Img08_RECOVERY-FA19.png` using the corresponding ground-truth labeled image `./data/datasets/single_sample_from_RECOVERY-FA19/Labels_RECOVERY-FA19/Label08_RECOVERY-FA19.png`.
 
-If the full RECOVERY-FA19 dataset is downloaded in the dataset folder (see following section for instructions), with a minor modification, the evaluation script (and detected vessel maps provided with the code) also allow you to replicate the results reported in Table 2 of the paper. Please see the comments in `./run_eval_seg_vs_gt.sh` for parameter settings and the minor changes required. Note that the results in Table 2 of the paper are obtained with a leave-one-out cross validation procedure and to allow replication of the results in the table, we provide the full set of the detected vessel maps obtained using the leave-one-out cross validation in `./pretrained_results/`. 
+If the full RECOVERY-FA19 dataset is downloaded in the dataset folder (see following section for instructions), with a minor modification, the evaluation script (and detected vessel maps provided with the code) also allow you to replicate the results reported in Table 2 of the paper. Please see the comments in `run_eval_seg_vs_gt.sh` for parameter settings and the minor changes required. Note that the results in Table 2 of the paper are obtained with a leave-one-out cross validation procedure and to allow replication of the results in the table, we provide the full set of the detected vessel maps obtained using the leave-one-out cross validation in `./data/pretrained_results/`. 
 
 ## Datasets
-As indicated above, by default, the code runs on one sample ultra-widefield fluorescein angiography (FA) image from the RECOVERY-FA19 dataset that is included with the code repository. If you would like to run the code on all images in the RECOVERY-FA19 dataset, please download the entire dataset from the [IEEE DataPort](https://doi.org/10.21227/m9yw-xs04) and place them in an appropriate directory structure as indicated by the instructions in the file `./datasets/README.md`.
+As indicated above, by default, the code runs on one sample ultra-widefield fluorescein angiography (FA) image from the RECOVERY-FA19 dataset that is included with the code repository. If you would like to run the code on all images in the RECOVERY-FA19 dataset, please download the entire dataset from the [IEEE DataPort](https://doi.org/10.21227/m9yw-xs04) and place them in an appropriate directory structure as indicated by the instructions in the file `./data/datasets/README.md`.
 
 
 ## Citation
