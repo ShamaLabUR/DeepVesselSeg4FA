@@ -28,7 +28,7 @@ The program requires Python 3.x and the following packages:
 For specifc package version etc, please see the Code Ocean capsule. GPU is highly recommended.
 
 ## Run the Program using Code Ocean
-We recommend using the Code Ocean version of this program, which can be run using Code Ocean's built-in interface. The code is available [here](https://). To use the code independently, without using the Code Ocean plaform, you can either download a compute capsule from Code Ocean or get the code from GitHub and complete required manual steps of getting the Pre-trained model from Code Ocean and any configuration/API adjustments caused by differences in package versions.
+We recommend using the Code Ocean version of this program, which can be run using Code Ocean's built-in interface. The code is available [here](https://). To use the code independently, without using the Code Ocean plaform, you can either download a compute capsule from Code Ocean or get the code from GitHub and complete required manual steps of getting the pre-trained model from Code Ocean and any configuration/API adjustments caused by differences in package versions.
 
 ## Detect Retinal Vessels using the provided Pre-trained Model
 To run the FA vessel detection using the pre-trained model, go to `./code` folder and execute the bash script
