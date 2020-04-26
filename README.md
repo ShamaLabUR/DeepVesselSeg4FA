@@ -9,7 +9,7 @@ IEEE Transactions on Image Processing, vol. 29, no. 1, 2020, accepted for public
 <a href="http://www.ece.rochester.edu/~gsharma/papers/Ding_FAVesselDetPipeline_TIP2020.pdf">[Paper]</a>
 <a href="http://www.ece.rochester.edu/~gsharma/papers/Suppl_Ding_FAVesselDetPipeline_TIP2020.pdf">[Supplementary]</a>
 <a href="https://doi.org/10.21227/m9yw-xs04">[Dataset]</a>
-<a href="url">[Code Ocean capsule]</a>
+<a href="https://doi.org/10.24433/CO.1133548.v1">[Code Ocean capsule]</a>
 <a href="url">[Project Website]</a>
 </p>
 
@@ -28,7 +28,7 @@ The program requires Python 3.x and the following packages:
 For specifc package version etc, please see the Code Ocean capsule. GPU is highly recommended.
 
 ## Run the Program using Code Ocean
-We recommend using the Code Ocean version of this program, which can be run using Code Ocean's built-in interface. The code is available [here](https://). To use the code independently, without using the Code Ocean plaform, you can either download a compute capsule from Code Ocean or get the code from GitHub and complete required manual steps of getting the pre-trained model from Code Ocean and any configuration/API adjustments caused by differences in package versions.
+We recommend using the Code Ocean version of this program, which can be run using Code Ocean's built-in interface. The code is available [here](https://doi.org/10.24433/CO.1133548.v1). To use the code independently, without using the Code Ocean plaform, you can either download a compute capsule from Code Ocean or get the code from GitHub and complete required manual steps of getting the pre-trained model from Code Ocean and any configuration/API adjustments caused by differences in package versions.
 
 ## Detect Retinal Vessels using the provided Pre-trained Model
 To run the FA vessel detection using the pre-trained model, go to `./code` folder and execute the bash script
