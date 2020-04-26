@@ -35,7 +35,7 @@ To run the FA vessel detection using the pre-trained model, go to `./code` folde
 ```bash
 ./run_detect_FA_vessels_w_DNN.sh
 ```
-The results will be saved to `./results`. This folder will be automatically generated if it does not exist. Please see the comments in `run_detect_FA_vessels_w_DNN.sh` for parameter settings. The detected retinal vessel maps are saved as PNG images in `./results`. The filename `predicted_Img*png` against the corresponding ground truth vessel map available in the folder `./dataset` where the name of the ground truth file is `Label*.png`
+The results will be saved to `./results`. This folder will be automatically generated if it does not exist. Please see the comments in `run_detect_FA_vessels_w_DNN.sh` for parameter settings. The detected retinal vessel maps are saved as PNG images in `./results`.
 
 By default, the code demonstrates the vessel detection on the image `./data/datasets/single_sample_from_RECOVERY-FA19/Images_RECOVERY-FA19/Img08_RECOVERY-FA19.tif`, which corresponds to the second image in Fig. 9 in the above mentioned paper. The predicted vessel map is stored in `./results/predicted_Img08_RECOVERY-FA19.png`. The trained model used for obtaining the segmentation is provided as `./data/pretrained_models/model_8.pth` and corresponds to the model used for generating the results for this image for Table II of the above paper. That is, it is the model from the leave-one-out cross-validation procedure that was trained on the remaining 7 images in the RECOVERY-FA19 dataset (see paper for details).
 
@@ -45,7 +45,7 @@ Once the vessel detection is completed using the above process, several evaluati
 ```bash
 ./run_eval_seg_vs_gt.sh
 ```
-
+The filename `predicted_Img*png` against the corresponding ground truth vessel map available in the folder `./dataset` where the name of the ground truth file is `Label*.png`
 Summary statistics from the evaluation will be displayed on the screen. By default, if you perform these two steps in sequence, the code will perform the evaluation for the predicted vessel map `./results/predicted_Img08_RECOVERY-FA19.png` using the corresponding ground-truth labeled image `./data/datasets/single_sample_from_RECOVERY-FA19/Labels_RECOVERY-FA19/Label08_RECOVERY-FA19.png`.
 
 If the full RECOVERY-FA19 dataset is downloaded in the dataset folder (see following section for instructions), with a minor modification, the evaluation script (and detected vessel maps provided with the code) also allow you to replicate the results reported in Table 2 of the paper. Please see the comments in `run_eval_seg_vs_gt.sh` for parameter settings and the minor changes required. Note that the results in Table 2 of the paper are obtained with a leave-one-out cross validation procedure and to allow replication of the results in the table, we provide the full set of the detected vessel maps obtained using the leave-one-out cross validation in `./data/pretrained_results/`. 
