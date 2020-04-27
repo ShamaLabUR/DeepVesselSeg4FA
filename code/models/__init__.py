@@ -31,7 +31,7 @@ from .Discriminator import netD
 def create_model(arch):
     print('creating model: '+str(arch))
     if arch == 'UNetVgg':
-        model = UNetVgg(pretrained=True)
+        model = UNetVgg(pretrained=False)
     elif arch == 'netD':
         model = netD((4,256,256))
     else:
