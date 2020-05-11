@@ -10,7 +10,7 @@ IEEE Transactions on Image Processing, vol. 29, no. 1, 2020, accepted for public
 <a href="http://www.ece.rochester.edu/~gsharma/papers/Suppl_Ding_FAVesselDetPipeline_TIP2020.pdf">[Supplementary]</a>
 <a href="https://doi.org/10.21227/m9yw-xs04">[Dataset]</a>
 <a href="https://doi.org/10.24433/CO.1133548.v1">[Code Ocean capsule]</a>
-<a href="url">[Project Website]</a>
+<a href="https://labsites.rochester.edu/gsharma/research/computer-vision/deep-retinal-vessel-segmentation-for-fluorescein-angiography-fa-retinal-images/">[Project Website]</a>
 </p>
 
 ![overview](./data/docs/pipeline_overview.png)
