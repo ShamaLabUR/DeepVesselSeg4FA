@@ -3,7 +3,7 @@ This repository contains code for evaluating the retinal vessel segmentation and
 
 Li Ding, Mohammad H. Bawany, Ajay E. Kuriyan, Rajeev S. Ramchandran, Charles C. Wykoff, and Gaurav Sharma,
 "A Novel Deep Learning Pipeline for Retinal Vessel Detection In Fluorescein Angiography",
-IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 6561-6573, 2020.
+IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 6561-6573, 2020. 
 
 <p align="justify">
 <a href="http://www.ece.rochester.edu/~gsharma/papers/Ding_FAVesselDetPipeline_TIP2020.pdf">[Paper]</a>
